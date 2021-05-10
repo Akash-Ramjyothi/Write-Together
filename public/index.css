@@ -1,0 +1,78 @@
+#fixed {
+    bottom: 0;
+    right: 2%;
+    margin-left: -200px;
+    overflow: hidden;
+    padding: 0 5px;
+    position: fixed;
+    width: 400px;
+    z-index: 1001;
+}
+
+.fixedHeader {
+    background: none repeat scroll 0 0 #6d84b4;
+    border: 1px solid #3d5a99;
+    border-bottom: none;
+    color: #fff;
+    height: 30px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 400;   
+    font-weight:700;
+    font-size:15px;
+}
+
+.fixedContent {
+    background: none repeat scroll 0 0 #ffffff;
+    border-left: 1px solid #b2b2b2;
+    border-right: 1px solid #b2b2b2;
+    margin: 0 auto;   
+    width: 390;
+    height:300px;
+    overflow: auto;
+}
+
+.userinput{
+    width: 390px;
+    height:30px;
+    outline:none;
+    display:block;
+    resize:none;
+    padding:5px;    
+}
+
+.messages{
+    color: #333;
+    line-height: 1.28;
+    padding:5px;
+    margin-left:70px;
+    font-size: 14px;
+    display: block;
+}
+
+.userwrap{
+    position:relative;
+}
+
+.user{
+    padding: 5px ;
+    font-size:12px;
+    color:#888;
+    font-weight:700;
+    position:absolute;
+    left:0; top:0;
+}
+.chatbox{
+  overflow: visible;
+  height: 30px;
+}
+
+
+#board {
+        margin: 0 auto;
+        width: 800px;  
+}
+ 
+#myCanvas {
+        border: 3px solid #000;       
+}

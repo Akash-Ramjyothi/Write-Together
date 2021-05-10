@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Write-Together</title>
+    <script src="/socket.io/socket.io.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	  <link rel="stylesheet" type="text/css" href="index.css">
+
+  </head>
+  <body>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" style="background: blue;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><h4 class="modal-title">Enter name</h4></center>
+      </div>
+		<center>
+	      <div class="modal-body">
+	       	<input type="text" id="name" value=""> &nbsp &nbsp
+			<input type="button" id="getName" value="Submit" data-dismiss="modal" class="btn btn-default">
+	      </div>
+	    </center>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="board">
+<canvas id="myCanvas" width="800px" height="600px">
+        Sorry, your browser doesn't support canvas technology.
+</canvas>
+<p>Color picker: <select id="selectColor">
+                  <option id="colBlack" value="black" selected="selected">Black</option>
+                  <option id="colRed" value="red">Red</option>
+                  <option id="colBlue" value="blue">Blue</option>
+                  <option id="colGreen" value="green">Green</option>
+                  <option id="colOrange" value="orange">Orange</option>
+                  <option id="colYellow" value="yellow">Yellow</option>
+</select>
+</p>
+</div><!-- END board -->
+
+
+<div id="fixed">
+    <div id="chatUser" class="fixedHeader"></div>
+    <div class="fixedContent"></div>
+    <div class="chatbox">
+        <textarea class="userinput">Type here...</textarea>            
+    </div>
+</div>
+
+<script src="index.js"></script>
+  </body>
+</html>
